@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+    <link rel="stylesheet" href="/btc_styles.css">
+
+</head>
+<body class="body-cover">
+  <header>
+    <% include ./partials/header %>
+  </header>
+  <div class="container">
+  <img src="http://eleventygroup.com/wp-content/uploads/bitcoinLogo1000-300x300.png">
+
+<h3 id="btc-main-tracker">
+Bitcoin Price tracker:
+  <span id="main-price">
+  </span>
+  </h3>
+  <button id="fetchUserData" onclick="getResponse()">REFRESH</button>
+  <button id="fetchUserData" onclick="displayUserData()">VIEW</button>
+
+  <div class="container">
+  <div class="row">
+    <ul id="output">
+      
+    </ul>
+  </div>
+</div>
+
+  </div>
+  <script src="/twitch_scr.js"></script>
+
+  <footer>
+    <% include ./partials/footer %>
+</footer>
+</body>
